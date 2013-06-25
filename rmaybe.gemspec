@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Rmaybe::VERSION
   gem.authors       = ["kmdsbng"]
   gem.email         = ["kameda.sbng@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{maybe monad library}
+  gem.summary       = %q{maybe monad library}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
