@@ -1,6 +1,6 @@
 # Rmaybe
 
-TODO: Write a gem description
+This library give maybe monad on ruby.
 
 ## Installation
 
@@ -18,7 +18,10 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    "a b c".maybe.split[2].upcase.end #=> C
+
+    "a b c".maybe.split[3].upcase.end #=> nil
+
 
 ## Contributing
 
