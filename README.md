@@ -1,6 +1,6 @@
 # Rmaybe
 
-This library give maybe monad on ruby.
+This library gives maybe monad on ruby.
 
 ## Installation
 
