@@ -1,5 +1,7 @@
 # Rmaybe
 
+[![Build Status](https://travis-ci.org/kmdsbng/rmaybe.svg?branch=master)](https://travis-ci.org/kmdsbng/rmaybe)
+
 This library gives maybe monad on ruby.
 
 ## Installation
