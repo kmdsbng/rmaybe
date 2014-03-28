@@ -1,6 +1,7 @@
 # Rmaybe
 
 [![Build Status](https://travis-ci.org/kmdsbng/rmaybe.svg?branch=master)](https://travis-ci.org/kmdsbng/rmaybe)
+[![Gem Version](https://badge.fury.io/rb/rmaybe.png)](http://badge.fury.io/rb/rmaybe)
 
 This library gives maybe monad on ruby.
 
