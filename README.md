@@ -21,7 +21,7 @@ Or install it yourself as:
 
 ## Usage
 
-    "a b c".maybe.split[2].upcase.end #=> C
+    "a b c".maybe.split[2].upcase.end #=> "C"
 
     "a b c".maybe.split[3].upcase.end #=> nil
 
