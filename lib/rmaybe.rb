@@ -7,7 +7,7 @@ class Never
     undef_method(v) unless %w(object_id __id__ __send__).include?(v.to_s)
   end
 
-  def method_missing(*args)
+  def method_missing(*_args)
     self
   end
 
@@ -30,7 +30,7 @@ class Maybe < Never
   end
 
   def method_missing(*args, &block)
-    @value ? Maybe.new(@value.__send__(*args, &block)) : Never.new
+    @value.nil? ? Never.new : Maybe.new(@value.__send__(*args, &block))
   end
 
   def end
@@ -40,9 +40,7 @@ end
 
 class Object
   def maybe
-    Maybe.new(block_given? ? yield : self)
-  rescue Exception
-    Never.new
+    self.nil? ? Never.new : Maybe.new(block_given? ? yield : self)
   end
 
   def maybe?
